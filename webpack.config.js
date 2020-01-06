@@ -6,8 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "vue-cos-helper.min.js",
-    library: 'VueCosHelper',
+    filename: "vue-cos-widget.min.js",
+    library: 'VueCosWidget',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

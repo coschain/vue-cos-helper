@@ -1,8 +1,8 @@
 {
-  "name": "vue-cos-helper",
+  "name": "vue-cos-widget",
   "version": "1.0.0",
-  "description": "helper for coschain",
-  "main": "./dist/vue-cos-helper.min.js",
+  "description": "widgets for coschain",
+  "main": "./dist/vue-cos-widget.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
