@@ -4,6 +4,10 @@ Vue plugins for interacting with coschain though cos chrome extension.
 
 # Usage
 
+## install
+
+npm i @coschain/vue-cos-widget --save
+
 ## principle
 
 1. each widget has two callback functions. `v-on:result` would be triggered when request success otherwise `v-on:error` triggered.
