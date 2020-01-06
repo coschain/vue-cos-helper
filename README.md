@@ -6,7 +6,9 @@ Vue plugins for interacting with coschain though cos chrome extension.
 
 ## install
 
+```bash
 npm i @coschain/vue-cos-widget --save
+```
 
 ## principle
 
@@ -16,8 +18,8 @@ npm i @coschain/vue-cos-widget --save
 ## cos-transfer
 
 ```js
-import Transfer from 'vue-cos-widget'
-Vue.use(Transfer)
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
 ```
 
 ```html
@@ -27,8 +29,8 @@ Vue.use(Transfer)
 ## cos-vest
 
 ```js
-import CosToVest from 'vue-cos-widget'
-Vue.use(CosToVest)
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
 ```
 
 ```html
@@ -49,8 +51,8 @@ Vue.use(VestToCos)
 ## cos-chicken
 
 ```js
-import CosToChicken from 'vue-cos-widget'
-Vue.use(CosToChicken)
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
 ```
 
 ```html
@@ -60,8 +62,8 @@ Vue.use(CosToChicken)
 ## cos-unchicken
 
 ```js
-import ChickenToCos from 'vue-cos-widget'
-Vue.use(ChickenToCos)
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
 ```
 
 ```html
