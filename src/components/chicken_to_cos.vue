@@ -16,6 +16,10 @@
         type: String,
         require: true
       },
+      receiver: {
+        type: String,
+        require: true
+      }
     },
     methods: {
       async chicken_to_cos() {
@@ -24,7 +28,7 @@
           return;
         }
         try {
-          let result = await apply_operation(ContentosWallet.stakeToCos, [this.amount]);
+          let result = await apply_operation(ContentosWallet.stakeToCos, [this.amount, this.receiver]);
           this.$emit('result', result)
         } catch (ex) {
           this.$emit('error', ex)

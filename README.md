@@ -40,8 +40,8 @@ Vue.use(Widget)
 ## cos-unvest
 
 ```js
-import VestToCos from 'vue-cos-widget'
-Vue.use(VestToCos)
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
 ```
 
 ```html
@@ -56,7 +56,7 @@ Vue.use(Widget)
 ```
 
 ```html
-<cos-chicken text="stake" v-on:result="resultHandler" v-on:error="errorHandler"></cos-chicken>
+<cos-chicken text="stake" v-bind:receiver="receiver" v-on:result="resultHandler" v-on:error="errorHandler"></cos-chicken>
 ```
 
 ## cos-unchicken
@@ -67,5 +67,5 @@ Vue.use(Widget)
 ```
 
 ```html
-<cos-unchicken text="unstake" v-on:result="resultHandler" v-on:error="errorHandler"></cos-unchicken>
+<cos-unchicken text="unstake" v-bind:receiver="receiver" v-on:result="resultHandler" v-on:error="errorHandler"></cos-unchicken>
 ```
