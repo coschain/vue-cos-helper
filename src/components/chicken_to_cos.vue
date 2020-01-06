@@ -1,18 +1,14 @@
 <template>
-  <button @click="transfer">{{ text }}</button>
+  <button @click="chicken_to_cos">{{ text }}</button>
 </template>
 
 <script>
   import {apply_operation} from "../common/common";
 
   export default {
-    name: 'Transfer',
+    name: 'ChickenToCos',
     props: {
       text: {
-        type: String,
-        required: true
-      },
-      receiver: {
         type: String,
         required: true
       },
@@ -20,22 +16,18 @@
         type: String,
         require: true
       },
-      memo: {
-        type: String,
-        require: false
-      }
     },
     methods: {
-      async transfer () {
+      async chicken_to_cos() {
         if (typeof ContentosWallet === 'undefined') {
           alert('Wallet not installed！');
           return;
         }
         try {
-          let result = await apply_operation(ContentosWallet.transfer, [this.receiver, this.amount, this.memo])
+          let result = await apply_operation(ContentosWallet.stakeToCos, [this.amount]);
           this.$emit('result', result)
-        } catch (e) {
-          this.$emit('error', e)
+        } catch (ex) {
+          this.$emit('error', ex)
         }
       }
     }
