@@ -1,5 +1,5 @@
 {
-  "name": "vue-cos-widget",
+  "name": "@coschain/vue-cos-widget",
   "version": "1.0.0",
   "description": "widgets for coschain",
   "main": "./dist/vue-cos-widget.min.js",
