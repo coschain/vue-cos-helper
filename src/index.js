@@ -1,8 +1,8 @@
 import Transfer from './components/transfer.vue'
-import CosToVest from './components/cos_to_vest'
-import VestToCos from './components/vest_to_cos'
-import CosToChicken from './components/cos_to_chicken'
-import ChickenToCos from './components/chicken_to_cos'
+import CosToVest from './components/cos_to_vest.vue'
+import VestToCos from './components/vest_to_cos.vue'
+import CosToChicken from './components/cos_to_chicken.vue'
+import ChickenToCos from './components/chicken_to_cos.vue'
 
 export default {
   install (Vue) {
