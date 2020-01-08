@@ -69,3 +69,25 @@ Vue.use(Widget)
 ```html
 <cos-unchicken text="unstake" v-bind:receiver="receiver" v-on:result="resultHandler" v-on:error="errorHandler"></cos-unchicken>
 ```
+
+## cos-contractcall
+
+```js
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
+```
+
+```html
+<cos-contractcall text="contract call" v-bind:contract="contract" v-bind:owner="owner" v-bind:method="method" v-bind:argument="argument" v-bind:payment="payment" v-on:result="resultHandler" v-on:error="errorHandler"></cos-contractcall>
+```
+
+## cos-votebp
+
+```js
+import Widget from 'vue-cos-widget'
+Vue.use(Widget)
+```
+
+```html
+<cos-votebp text="vote" v-bind:bp="bp" v-on:cancel="cancel" v-on:result="resultHandler" v-on:error="errorHandler"></cos-votebp>
+```
