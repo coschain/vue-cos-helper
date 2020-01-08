@@ -34,7 +34,7 @@
       }
     },
     methods: {
-      async cos_to_chicken() {
+      async call_contract() {
         if (typeof ContentosWallet === 'undefined') {
           alert('Wallet not installed！');
           return;

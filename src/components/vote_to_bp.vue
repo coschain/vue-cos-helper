@@ -16,7 +16,7 @@
         type: String,
         required: true
       },
-      vote: {
+      cancel: {
         type: Boolean,
         required: true
       }
@@ -28,7 +28,7 @@
           return;
         }
         try {
-          let result = await apply_operation(ContentosWallet.voteToBlockProducer, [this.bp, this.vote]);
+          let result = await apply_operation(ContentosWallet.voteToBlockProducer, [this.bp, this.cancel]);
           this.$emit('result', result)
         } catch (ex) {
           this.$emit('error', ex)
