@@ -89,5 +89,5 @@ Vue.use(Widget)
 ```
 
 ```html
-<cos-votebp text="vote" v-bind:bp="bp" v-on:cancel="cancel" v-on:result="resultHandler" v-on:error="errorHandler"></cos-votebp>
+<cos-votebp text="vote" v-bind:bp="bp" v-bind:cancel="cancel" v-on:result="resultHandler" v-on:error="errorHandler"></cos-votebp>
 ```
